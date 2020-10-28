@@ -4,7 +4,7 @@ function carregar() {
     var agora = new Date()
     var hora = agora.getHours()
 
-    hora = 1
+    //hora = 1
     msg.innerText = `Agora são ${hora} horas.`
 
     if (hora >= 5 && hora <= 12) {
