@@ -9,13 +9,14 @@ function valido(n) {
 }
 
 function repetido(n, l) {
-    if (l.indexOf(Number(n)) != -1) return true
-    else return false
+    if (l.indexOf(Number(n)) != -1) {
+        return true
+    } else return false
 }
 
 function adicionar() {
     if (valido(num.value) && !repetido(num.value, valores)) {
-        valores.push(num.value)
+        valores.push(Number(num.value))
         res.innerHTML = ''
 
         let item = document.createElement('option')
@@ -31,6 +32,26 @@ function adicionar() {
 }
 
 function finalizar() {
-    res.innerHTML = `Ao todo temos ${valores.length} valores cadastrados <br>`
-    res.innerHTML += `O maior valor informado foi ${valores.max}`
+    if (valores.length == 0) {
+        window.alert('Adicione valores antes de finalizar!')
+    } else {
+        let maior = valores[0]
+        let menor = valores[0]
+        let soma = 0
+        let media = 0
+
+        for (let pos in valores) {
+            if (valores[pos] > maior) maior = valores[pos]
+            if (valores[pos] < menor) menor = valores[pos]
+            soma += valores[pos]
+        }
+
+        media = soma / valores.length
+
+        res.innerHTML = `A lista possui ${valores.length} valores cadastrados<br>`
+        res.innerHTML += `O maior valor adicionado à lista é ${maior}<br>`
+        res.innerHTML += `O menor valor adicionado à lista é ${menor}<br>`
+        res.innerHTML += `A soma de todos os valores adicionados à lista é ${soma}<br>`
+        res.innerHTML += `A média de todos os valores adicionados à lista é ${media}`
+    }
 }
