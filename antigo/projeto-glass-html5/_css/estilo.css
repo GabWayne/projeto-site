@@ -89,7 +89,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: 0px;
-    left: 470px;
+    left: 500px;
 }
 
 nav#menu li {
@@ -123,6 +123,18 @@ section#corpo {
     float: left;
     border-right: 1px solid gray;
     padding-right: 20px;
+}
+
+table#espec {
+    border: 1px solid gray;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#espec td {
+    border: 1px solid gray;
+    padding: 10px;
 }
 
 aside#lateral {
