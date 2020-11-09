@@ -5,6 +5,7 @@
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: lightgray;
 }
 
@@ -47,6 +48,15 @@ header#cabecalho h2 {
 p {
     text-align: justify;
     text-indent: 40px;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Formatação de imagens com legenda */
@@ -119,10 +129,42 @@ nav#menu a:hover {
 
 section#corpo {
     display: block;
-    width: 560px;
+    width: 550px;
     float: left;
     border-right: 1px solid gray;
     padding-right: 20px;
+}
+
+article#principal h2 {
+    font-size: 15pt;
+    color: gray;
+    background-color: lightgray;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+header#cabecalho-artigo h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 25pt;
+    color: gray;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+header#cabecalho-artigo h2 {
+    font-size: 15pt;
+    color: lightgray;
+    background-color: white;
+    margin-top: 0px;
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 10pt;
+    color: gray;
+}
+
+.direita {
+    text-align: right;
 }
 
 table#espec {
@@ -137,10 +179,56 @@ table#espec td {
     padding: 10px;
 }
 
+table#espec td.ce {
+    text-align: right;
+    color: white;
+    background-color: gray;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#espec td.cd {
+    text-align: left;
+    background-color: lightgray;
+}
+
+table#espec caption {
+    color: gray;
+    font-size: 15pt;
+    font-weight: bolder;
+}
+
+table#espec caption span {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
 aside#lateral {
     display: block;
     width: 300px;
     float: right;
+    background-color: lightgray;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+aside#lateral h1 {
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: gray;
+    margin-top: 5px;
+}
+
+aside#lateral h2 {
+    font-size: 15pt;
+    background-color: gray;
+    color: white;
+    padding: 5px;
+
 }
 
 footer#rodape {
