@@ -19,7 +19,7 @@ div#interface {
 
 header#cabecalho img#icone {
     position: absolute;
-    left: 920px;
+    left: 970px;
     top: 75px;
 }
 
@@ -141,6 +141,7 @@ article#principal h2 {
     background-color: lightgray;
     padding: 5px;
     padding-left: 10px;
+    margin: 1px;
 }
 
 header#cabecalho-artigo h1 {
@@ -161,6 +162,10 @@ header#cabecalho-artigo h2 {
 header#cabecalho-artigo h3 {
     font-size: 10pt;
     color: gray;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .direita {
@@ -172,6 +177,8 @@ table#espec {
     border-spacing: 0px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 table#espec td {
