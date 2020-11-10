@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao JavaScript</title>
+    <script>
+        function quebrar() {
+            document.getElementById('luz').src = "_imagens/lampada-quebrada.jpg"
+        }
+        function apagar() {
+            document.getElementById('luz').src = "_imagens/lampada-apagada.jpg"
+        }
+        function acender() {
+            document.getElementById('luz').src = "_imagens/lampada-acesa.jpg"
+        }
+    </script>
+</head>
+<body>
+    <h1>Vamos acender a lâmpada</h1>
+    <img src="_imagens/lampada-apagada.jpg" alt="Lamapada" id="luz" onclick="quebrar()" onmouseout="apagar()" onmouseenter="acender()">
+</body>
+</html>
