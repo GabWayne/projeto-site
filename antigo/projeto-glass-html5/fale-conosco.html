@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tudo sobre Google Glass</title>
     <link rel="stylesheet" href="_css/estilo.css">
+    <link rel="stylesheet" href="_css/form.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
     </style>
@@ -43,13 +44,13 @@
                     </hgroup>
                 </header>
             
-                <form method="POST" id="fcontato">
+                <form method="POST" id="fcontato" oninput="calctotal()">
                     <fieldset id="usuario">
                         <legend>Identificação do Usuário</legend>
                         <p><label for="cnome">Nome:</label> <input type="text" name="tnome" id="cnome" placeholder="Nome Completo"> </p>
                         <p><label for="csenha">Senha:</label> <input type="password" name="tsenha" id="csenha" placeholder="Senha de 8 dígitos"> </p>
                         <p><label for="cmail">E-mail:</label> <input type="email" name="tmail" id="cmail" placeholder="usuário@domínio.com"> </p>
-                        <fieldset>
+                        <fieldset id="sexo">
                             <legend>Sexo:</legend>
                             <label for="cmasc">Masculino</label> <input type="radio" name="tgen" id="cmasc" checked> <br>
                             <label for="cfemi">Feminino</label> <input type="radio" name="tgen" id="cfemi">
@@ -87,13 +88,14 @@
             
                     <fieldset id="pedido">
                         <legend>Quero um Google Glass</legend>
-                        Gostaria de adquirir um Google Glass quando disponível
-                        Cor:
-                        Quantidade:
-                        Preço Total: R$
+                        <p><input type="checkbox" name="tpedi" id="cpedi"> <label for="cpedi">Gostaria de adquirir um Google Glass quando disponível</label></p>
+                        <p>Cor: <input type="color" name="tcor" id="ccor" value="#0000FF"></p>
+                        <p>Quantidade: <input type="number" name="tquant" id="cquant" min="0" value="0"></p>
+                        <p>Preço Total: R$ <input type="text" name="ttotal" id="ctotal" placeholder="Total a pagar" readonly></p>
                     </fieldset>
             
-                    [BOTÃO ENVIAR]
+                    <input type="submit" value="Enviar" name="tenviar">
+            
                 </form>
             </article>
         </section>
